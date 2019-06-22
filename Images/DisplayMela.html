@@ -1,0 +1,80 @@
+<head>
+<link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+
+<style>
+
+.column2 {
+  float: left;
+  width: 31%;
+  padding: 1%;
+}
+.column {
+  float: left;
+  width: 48%;
+  padding: 1%;
+}
+p {
+    font-size: 14px;
+	font-family: 'Crete Round', serif;
+
+}
+h2 {
+	padding-left: 1%;
+	font-family: 'Crete Round', serif;
+
+}
+</style>
+</head>
+
+<body>
+
+	<h2> Segmentation </h2>
+	<div class="row">
+		<div class="column2">
+			<img src="I.jpg" alt="Input" style="width:100%">
+			<figcaption>Fig.1 - Input Image</figcaption>
+		</div>		
+		<div class="column2">
+			<img src="B.jpg" alt="Outline" style="width:100%">	
+			<figcaption>Fig.2 - Projects outline of lesion</figcaption>
+		</div>
+		<div class="column2">
+			<img src="B2.jpg" alt="Dermo Outline" style="width:100%">	
+			<figcaption>Fig.3 - Dermotologists outline of lesion</figcaption>
+		</div>
+		
+		<h2> Results </h2>
+
+		<div class="column">
+			<div id="list"><p><iframe src="jaccard.txt" frameborder=0 width=45% height=8% colour:red ></iframe></p></div>
+		</div>
+		<div class="column">
+			<div id="list"><p><iframe src="classified.txt" frameborder=0 width=45% height=8% ></iframe></p></div>
+		</div>
+		
+		<div class="column">
+			<img src="Y.jpg" alt="Binary" style="width:100%">
+			<figcaption>Fig.4 - Binary object shape</figcaption>
+		</div>
+		<div class="column">
+			<img src="Jaccard.jpg" alt="Jaccard" style="width:100%">
+			<figcaption>Fig.5 - Overlap of output and ideal segmentation</figcaption>
+		</div>
+		
+		<h2> Justifying Results </h2>
+
+		<div class="column">
+			<img src="cropped.jpg" alt="Zoomed" style="width:100%">
+			<figcaption>Fig.6 - Cropped and zoomed</figcaption>
+		</div>
+		<div class="column">
+			<img src="Irregular.png" alt="Center" style="width:100%">
+			<figcaption>Fig.7 - Distance between center of mass (pink) and mathematical center (white)</figcaption>
+		</div>
+		
+		<img src="redhistogram.jpg" alt="Histogram" style="width:100%">
+		<figcaption>Fig.8 - Histogram of red values</figcaption>
+
+	</div>
+
+</body>
